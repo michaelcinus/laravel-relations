@@ -11,6 +11,7 @@ class CreateEmployeesTable extends Migration
      *
      * @return void
      */
+    
     public function up()
     {
         Schema::create('employees', function (Blueprint $table) {
@@ -24,6 +25,8 @@ class CreateEmployeesTable extends Migration
             $table -> bigInteger('location_id') -> unsigned();
 
             $table -> timestamps();
+
+            
         });
     }
 
